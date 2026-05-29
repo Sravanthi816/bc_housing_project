@@ -1,4 +1,4 @@
-# Vancouver Housing Market Analytics
+# British Columbia Housing Market Analytics
 
 ## Project Overview
 

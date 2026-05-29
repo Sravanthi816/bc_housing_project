@@ -1,0 +1,875 @@
+<?xml version='1.0' encoding='utf-8' ?>
+
+<!-- build 20261.26.0512.1636                               -->
+<workbook original-version='18.1' source-build='2026.1.2 (20261.26.0512.1636)' source-platform='mac' version='18.1' xmlns:user='http://www.tableausoftware.com/xml/user'>
+  <document-format-change-manifest>
+    <AccessibleZoneTabOrder />
+    <AnimationOnByDefault />
+    <AutoCreateAndUpdateDSDPhoneLayouts />
+    <MarkAnimation />
+    <ObjectModelEncapsulateLegacy />
+    <ObjectModelExtractV2 />
+    <ObjectModelTableType />
+    <SchemaViewerObjectModel />
+    <SetMembershipControl />
+    <SheetIdentifierTracking />
+    <SortTagCleanup />
+    <_.fcp.VConnDownstreamExtractsWithWarnings.true...VConnDownstreamExtractsWithWarnings />
+    <WindowsPersistSimpleIdentifiers />
+    <ZoneBackgroundTransparency />
+  </document-format-change-manifest>
+  <preferences>
+    <preference name='ui.encoding.shelf.height' value='24' />
+    <preference name='ui.shelf.height' value='26' />
+  </preferences>
+  <datasources>
+    <datasource caption='bc-data-catalogue-cma-2025-q4' inline='true' name='federated.0fnvuoe0mxd7hd1cdqlir002bk7y' version='18.1'>
+      <connection class='federated'>
+        <named-connections>
+          <named-connection caption='bc-data-catalogue-cma-2025-q4' name='textscan.0dmrf8b1r1mx831916syc0fnii6u'>
+            <connection class='textscan' directory='/Users/sravanthigulla/Desktop/vancouver_housing_project/data' filename='bc-data-catalogue-cma-2025-q4.csv' password='' server='' />
+          </named-connection>
+        </named-connections>
+        <relation connection='textscan.0dmrf8b1r1mx831916syc0fnii6u' name='bc-data-catalogue-cma-2025-q4.csv' table='[bc-data-catalogue-cma-2025-q4#csv]' type='table'>
+          <columns character-set='UTF-8' header='yes' locale='en_CA' separator=','>
+            <column datatype='integer' name='CMA ID' ordinal='0' />
+            <column datatype='string' name='CMA NAME' ordinal='1' />
+            <column datatype='integer' name='YEAR' ordinal='2' />
+            <column datatype='integer' name='QUARTER' ordinal='3' />
+            <column datatype='string' name='HOUSING TYPE' ordinal='4' />
+            <column datatype='real' name='MEDIAN HOUSING PRICE' ordinal='5' />
+            <column datatype='real' name='MEDIAN AFTER TAX ANNUAL FAMILY INCOME' ordinal='6' />
+            <column datatype='real' name='PRIME INTEREST RATE' ordinal='7' />
+            <column datatype='real' name='MORTGAGE PAYMENT PERCENT INCOME' ordinal='8' />
+            <column datatype='real' name='HISTORIC PAYMENT PERCENT INCOME' ordinal='9' />
+            <column datatype='integer' name='NUMBER OF RESALES' ordinal='10' />
+          </columns>
+        </relation>
+        <metadata-records>
+          <metadata-record class='capability'>
+            <remote-name />
+            <remote-type>0</remote-type>
+            <parent-name>[bc-data-catalogue-cma-2025-q4.csv]</parent-name>
+            <remote-alias />
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='character-set'>&quot;UTF-8&quot;</attribute>
+              <attribute datatype='string' name='collation'>&quot;en_GB&quot;</attribute>
+              <attribute datatype='string' name='field-delimiter'>&quot;,&quot;</attribute>
+              <attribute datatype='string' name='header-row'>&quot;true&quot;</attribute>
+              <attribute datatype='string' name='locale'>&quot;en_CA&quot;</attribute>
+              <attribute datatype='string' name='single-char'>&quot;&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>CMA ID</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[CMA ID]</local-name>
+            <parent-name>[bc-data-catalogue-cma-2025-q4.csv]</parent-name>
+            <remote-alias>CMA ID</remote-alias>
+            <ordinal>0</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[bc-data-catalogue-cma-2025-q4.csv_26CA998B88234EF69224B22C0D9E4D6A]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>CMA NAME</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[CMA NAME]</local-name>
+            <parent-name>[bc-data-catalogue-cma-2025-q4.csv]</parent-name>
+            <remote-alias>CMA NAME</remote-alias>
+            <ordinal>1</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RGB' />
+            <object-id>[bc-data-catalogue-cma-2025-q4.csv_26CA998B88234EF69224B22C0D9E4D6A]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>YEAR</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[YEAR]</local-name>
+            <parent-name>[bc-data-catalogue-cma-2025-q4.csv]</parent-name>
+            <remote-alias>YEAR</remote-alias>
+            <ordinal>2</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[bc-data-catalogue-cma-2025-q4.csv_26CA998B88234EF69224B22C0D9E4D6A]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>QUARTER</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[QUARTER]</local-name>
+            <parent-name>[bc-data-catalogue-cma-2025-q4.csv]</parent-name>
+            <remote-alias>QUARTER</remote-alias>
+            <ordinal>3</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[bc-data-catalogue-cma-2025-q4.csv_26CA998B88234EF69224B22C0D9E4D6A]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>HOUSING TYPE</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[HOUSING TYPE]</local-name>
+            <parent-name>[bc-data-catalogue-cma-2025-q4.csv]</parent-name>
+            <remote-alias>HOUSING TYPE</remote-alias>
+            <ordinal>4</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RGB' />
+            <object-id>[bc-data-catalogue-cma-2025-q4.csv_26CA998B88234EF69224B22C0D9E4D6A]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>MEDIAN HOUSING PRICE</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[MEDIAN HOUSING PRICE]</local-name>
+            <parent-name>[bc-data-catalogue-cma-2025-q4.csv]</parent-name>
+            <remote-alias>MEDIAN HOUSING PRICE</remote-alias>
+            <ordinal>5</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[bc-data-catalogue-cma-2025-q4.csv_26CA998B88234EF69224B22C0D9E4D6A]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>MEDIAN AFTER TAX ANNUAL FAMILY INCOME</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[MEDIAN AFTER TAX ANNUAL FAMILY INCOME]</local-name>
+            <parent-name>[bc-data-catalogue-cma-2025-q4.csv]</parent-name>
+            <remote-alias>MEDIAN AFTER TAX ANNUAL FAMILY INCOME</remote-alias>
+            <ordinal>6</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[bc-data-catalogue-cma-2025-q4.csv_26CA998B88234EF69224B22C0D9E4D6A]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>PRIME INTEREST RATE</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[PRIME INTEREST RATE]</local-name>
+            <parent-name>[bc-data-catalogue-cma-2025-q4.csv]</parent-name>
+            <remote-alias>PRIME INTEREST RATE</remote-alias>
+            <ordinal>7</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[bc-data-catalogue-cma-2025-q4.csv_26CA998B88234EF69224B22C0D9E4D6A]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>MORTGAGE PAYMENT PERCENT INCOME</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[MORTGAGE PAYMENT PERCENT INCOME]</local-name>
+            <parent-name>[bc-data-catalogue-cma-2025-q4.csv]</parent-name>
+            <remote-alias>MORTGAGE PAYMENT PERCENT INCOME</remote-alias>
+            <ordinal>8</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[bc-data-catalogue-cma-2025-q4.csv_26CA998B88234EF69224B22C0D9E4D6A]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>HISTORIC PAYMENT PERCENT INCOME</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[HISTORIC PAYMENT PERCENT INCOME]</local-name>
+            <parent-name>[bc-data-catalogue-cma-2025-q4.csv]</parent-name>
+            <remote-alias>HISTORIC PAYMENT PERCENT INCOME</remote-alias>
+            <ordinal>9</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[bc-data-catalogue-cma-2025-q4.csv_26CA998B88234EF69224B22C0D9E4D6A]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>NUMBER OF RESALES</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[NUMBER OF RESALES]</local-name>
+            <parent-name>[bc-data-catalogue-cma-2025-q4.csv]</parent-name>
+            <remote-alias>NUMBER OF RESALES</remote-alias>
+            <ordinal>10</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[bc-data-catalogue-cma-2025-q4.csv_26CA998B88234EF69224B22C0D9E4D6A]</object-id>
+          </metadata-record>
+        </metadata-records>
+      </connection>
+      <aliases enabled='yes' />
+      <column caption='Cma Id' datatype='integer' name='[CMA ID]' role='dimension' type='ordinal' />
+      <column caption='Cma Name' datatype='string' name='[CMA NAME]' role='dimension' type='nominal' />
+      <column caption='Historic Payment Percent Income' datatype='real' name='[HISTORIC PAYMENT PERCENT INCOME]' role='measure' type='quantitative' />
+      <column caption='Housing Type' datatype='string' name='[HOUSING TYPE]' role='dimension' type='nominal' />
+      <column caption='Median After Tax Annual Family Income' datatype='real' name='[MEDIAN AFTER TAX ANNUAL FAMILY INCOME]' role='measure' type='quantitative' />
+      <column caption='Median Housing Price' datatype='real' name='[MEDIAN HOUSING PRICE]' role='measure' type='quantitative' />
+      <column caption='Mortgage Payment Percent Income' datatype='real' name='[MORTGAGE PAYMENT PERCENT INCOME]' role='measure' type='quantitative' />
+      <column datatype='integer' name='[Median Housing Price (bin)]' role='dimension' type='quantitative'>
+        <calculation class='bin' decimals='4' formula='[MEDIAN HOUSING PRICE]' peg='0' size='34721' />
+      </column>
+      <column caption='Number Of Resales' datatype='integer' name='[NUMBER OF RESALES]' role='measure' type='quantitative' />
+      <column caption='Prime Interest Rate' datatype='real' name='[PRIME INTEREST RATE]' role='measure' type='quantitative' />
+      <column caption='Quarter' datatype='integer' name='[QUARTER]' role='dimension' type='quantitative' />
+      <column caption='Year' datatype='integer' name='[YEAR]' role='dimension' type='quantitative' />
+      <column caption='bc-data-catalogue-cma-2025-q4.csv' datatype='table' name='[__tableau_internal_object_id__].[bc-data-catalogue-cma-2025-q4.csv_26CA998B88234EF69224B22C0D9E4D6A]' role='measure' type='quantitative' />
+      <column-instance column='[HISTORIC PAYMENT PERCENT INCOME]' derivation='Avg' name='[avg:HISTORIC PAYMENT PERCENT INCOME:qk]' pivot='key' type='quantitative' />
+      <column-instance column='[MEDIAN HOUSING PRICE]' derivation='Avg' name='[avg:MEDIAN HOUSING PRICE:qk]' pivot='key' type='quantitative' />
+      <column-instance column='[HISTORIC PAYMENT PERCENT INCOME]' derivation='Sum' name='[sum:HISTORIC PAYMENT PERCENT INCOME:qk]' pivot='key' type='quantitative' />
+      <column-instance column='[MEDIAN HOUSING PRICE]' derivation='Sum' name='[sum:MEDIAN HOUSING PRICE:qk]' pivot='key' type='quantitative' />
+      <extract _.fcp.VConnDownstreamExtractsWithWarnings.true...user-specific='false' count='-1' enabled='true' object-id='' units='records'>
+        <connection access_mode='readonly' author-locale='en_US' class='hyper' dbname='/var/folders/zz/jv8yvk6x46j763r12qyl72r40000gn/T/tableau-temp/#TableauTemp_1b8xc9i1f1b7bq11tzy5j0t6b02f.hyper' default-settings='hyper' schema='Extract' sslmode='' tablename='Extract' update-time='05/28/2026 10:42:43 PM' username='tableau_internal_user'>
+          <relation name='Extract' table='[Extract].[Extract]' type='table' />
+          <metadata-records>
+            <metadata-record class='column'>
+              <remote-name>CMA ID</remote-name>
+              <remote-type>20</remote-type>
+              <local-name>[CMA ID]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>CMA ID</remote-alias>
+              <ordinal>0</ordinal>
+              <family>bc-data-catalogue-cma-2025-q4.csv</family>
+              <local-type>integer</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>28</approx-count>
+              <contains-null>true</contains-null>
+              <object-id>[bc-data-catalogue-cma-2025-q4.csv_26CA998B88234EF69224B22C0D9E4D6A]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>CMA NAME</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[CMA NAME]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>CMA NAME</remote-alias>
+              <ordinal>1</ordinal>
+              <family>bc-data-catalogue-cma-2025-q4.csv</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>28</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='0' name='LEN_RGB' />
+              <object-id>[bc-data-catalogue-cma-2025-q4.csv_26CA998B88234EF69224B22C0D9E4D6A]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>YEAR</remote-name>
+              <remote-type>20</remote-type>
+              <local-name>[YEAR]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>YEAR</remote-alias>
+              <ordinal>2</ordinal>
+              <family>bc-data-catalogue-cma-2025-q4.csv</family>
+              <local-type>integer</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>26</approx-count>
+              <contains-null>true</contains-null>
+              <object-id>[bc-data-catalogue-cma-2025-q4.csv_26CA998B88234EF69224B22C0D9E4D6A]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>QUARTER</remote-name>
+              <remote-type>20</remote-type>
+              <local-name>[QUARTER]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>QUARTER</remote-alias>
+              <ordinal>3</ordinal>
+              <family>bc-data-catalogue-cma-2025-q4.csv</family>
+              <local-type>integer</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>4</approx-count>
+              <contains-null>true</contains-null>
+              <object-id>[bc-data-catalogue-cma-2025-q4.csv_26CA998B88234EF69224B22C0D9E4D6A]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>HOUSING TYPE</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[HOUSING TYPE]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>HOUSING TYPE</remote-alias>
+              <ordinal>4</ordinal>
+              <family>bc-data-catalogue-cma-2025-q4.csv</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>4</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='0' name='LEN_RGB' />
+              <object-id>[bc-data-catalogue-cma-2025-q4.csv_26CA998B88234EF69224B22C0D9E4D6A]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>MEDIAN HOUSING PRICE</remote-name>
+              <remote-type>5</remote-type>
+              <local-name>[MEDIAN HOUSING PRICE]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>MEDIAN HOUSING PRICE</remote-alias>
+              <ordinal>5</ordinal>
+              <family>bc-data-catalogue-cma-2025-q4.csv</family>
+              <local-type>real</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>8222</approx-count>
+              <contains-null>true</contains-null>
+              <object-id>[bc-data-catalogue-cma-2025-q4.csv_26CA998B88234EF69224B22C0D9E4D6A]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>MEDIAN AFTER TAX ANNUAL FAMILY INCOME</remote-name>
+              <remote-type>5</remote-type>
+              <local-name>[MEDIAN AFTER TAX ANNUAL FAMILY INCOME]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>MEDIAN AFTER TAX ANNUAL FAMILY INCOME</remote-alias>
+              <ordinal>6</ordinal>
+              <family>bc-data-catalogue-cma-2025-q4.csv</family>
+              <local-type>real</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>2358</approx-count>
+              <contains-null>true</contains-null>
+              <object-id>[bc-data-catalogue-cma-2025-q4.csv_26CA998B88234EF69224B22C0D9E4D6A]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>PRIME INTEREST RATE</remote-name>
+              <remote-type>5</remote-type>
+              <local-name>[PRIME INTEREST RATE]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>PRIME INTEREST RATE</remote-alias>
+              <ordinal>7</ordinal>
+              <family>bc-data-catalogue-cma-2025-q4.csv</family>
+              <local-type>real</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>64</approx-count>
+              <contains-null>true</contains-null>
+              <object-id>[bc-data-catalogue-cma-2025-q4.csv_26CA998B88234EF69224B22C0D9E4D6A]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>MORTGAGE PAYMENT PERCENT INCOME</remote-name>
+              <remote-type>5</remote-type>
+              <local-name>[MORTGAGE PAYMENT PERCENT INCOME]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>MORTGAGE PAYMENT PERCENT INCOME</remote-alias>
+              <ordinal>8</ordinal>
+              <family>bc-data-catalogue-cma-2025-q4.csv</family>
+              <local-type>real</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>8550</approx-count>
+              <contains-null>true</contains-null>
+              <object-id>[bc-data-catalogue-cma-2025-q4.csv_26CA998B88234EF69224B22C0D9E4D6A]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>HISTORIC PAYMENT PERCENT INCOME</remote-name>
+              <remote-type>5</remote-type>
+              <local-name>[HISTORIC PAYMENT PERCENT INCOME]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>HISTORIC PAYMENT PERCENT INCOME</remote-alias>
+              <ordinal>9</ordinal>
+              <family>bc-data-catalogue-cma-2025-q4.csv</family>
+              <local-type>real</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>105</approx-count>
+              <contains-null>true</contains-null>
+              <object-id>[bc-data-catalogue-cma-2025-q4.csv_26CA998B88234EF69224B22C0D9E4D6A]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>NUMBER OF RESALES</remote-name>
+              <remote-type>20</remote-type>
+              <local-name>[NUMBER OF RESALES]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>NUMBER OF RESALES</remote-alias>
+              <ordinal>10</ordinal>
+              <family>bc-data-catalogue-cma-2025-q4.csv</family>
+              <local-type>integer</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>837</approx-count>
+              <contains-null>true</contains-null>
+              <object-id>[bc-data-catalogue-cma-2025-q4.csv_26CA998B88234EF69224B22C0D9E4D6A]</object-id>
+            </metadata-record>
+          </metadata-records>
+        </connection>
+      </extract>
+      <layout dim-ordering='alphabetic' measure-ordering='alphabetic' show-structure='true' />
+      <style>
+        <style-rule element='mark'>
+          <encoding attr='color' field='[:Measure Names]' type='palette'>
+            <map to='#4e79a7'>
+              <bucket>&quot;[federated.0fnvuoe0mxd7hd1cdqlir002bk7y].[avg:HISTORIC PAYMENT PERCENT INCOME:qk]&quot;</bucket>
+            </map>
+            <map to='#4e79a7'>
+              <bucket>&quot;[federated.0fnvuoe0mxd7hd1cdqlir002bk7y].[sum:HISTORIC PAYMENT PERCENT INCOME:qk]&quot;</bucket>
+            </map>
+            <map to='#76b7b2'>
+              <bucket>&quot;[federated.0fnvuoe0mxd7hd1cdqlir002bk7y].[avg:MEDIAN HOUSING PRICE:qk]&quot;</bucket>
+            </map>
+            <map to='#76b7b2'>
+              <bucket>&quot;[federated.0fnvuoe0mxd7hd1cdqlir002bk7y].[sum:MEDIAN HOUSING PRICE:qk]&quot;</bucket>
+            </map>
+            <map to='#e15759'>
+              <bucket>&quot;[federated.0fnvuoe0mxd7hd1cdqlir002bk7y]&quot;</bucket>
+            </map>
+            <map to='#f28e2b'>
+              <bucket>&quot;[federated.0fnvuoe0mxd7hd1cdqlir002bk7y].[sum:HISTORIC PAYMENT PERCENT INCOME:qk]:1&quot;</bucket>
+            </map>
+          </encoding>
+        </style-rule>
+      </style>
+      <semantic-values>
+        <semantic-value key='[Country].[Name]' value='&quot;Canada&quot;' />
+      </semantic-values>
+      <object-graph>
+        <objects>
+          <object caption='bc-data-catalogue-cma-2025-q4.csv' id='bc-data-catalogue-cma-2025-q4.csv_26CA998B88234EF69224B22C0D9E4D6A'>
+            <properties context=''>
+              <relation connection='textscan.0dmrf8b1r1mx831916syc0fnii6u' name='bc-data-catalogue-cma-2025-q4.csv' table='[bc-data-catalogue-cma-2025-q4#csv]' type='table'>
+                <columns character-set='UTF-8' header='yes' locale='en_CA' separator=','>
+                  <column datatype='integer' name='CMA ID' ordinal='0' />
+                  <column datatype='string' name='CMA NAME' ordinal='1' />
+                  <column datatype='integer' name='YEAR' ordinal='2' />
+                  <column datatype='integer' name='QUARTER' ordinal='3' />
+                  <column datatype='string' name='HOUSING TYPE' ordinal='4' />
+                  <column datatype='real' name='MEDIAN HOUSING PRICE' ordinal='5' />
+                  <column datatype='real' name='MEDIAN AFTER TAX ANNUAL FAMILY INCOME' ordinal='6' />
+                  <column datatype='real' name='PRIME INTEREST RATE' ordinal='7' />
+                  <column datatype='real' name='MORTGAGE PAYMENT PERCENT INCOME' ordinal='8' />
+                  <column datatype='real' name='HISTORIC PAYMENT PERCENT INCOME' ordinal='9' />
+                  <column datatype='integer' name='NUMBER OF RESALES' ordinal='10' />
+                </columns>
+              </relation>
+            </properties>
+            <properties context='extract'>
+              <relation name='Extract' table='[Extract].[Extract]' type='table' />
+            </properties>
+          </object>
+        </objects>
+      </object-graph>
+    </datasource>
+  </datasources>
+  <worksheets>
+    <worksheet name='Sheet 1'>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='bc-data-catalogue-cma-2025-q4' name='federated.0fnvuoe0mxd7hd1cdqlir002bk7y' />
+          </datasources>
+          <datasource-dependencies datasource='federated.0fnvuoe0mxd7hd1cdqlir002bk7y'>
+            <column caption='Housing Type' datatype='string' name='[HOUSING TYPE]' role='dimension' type='nominal' />
+            <column caption='Median Housing Price' datatype='real' name='[MEDIAN HOUSING PRICE]' role='measure' type='quantitative' />
+            <column-instance column='[MEDIAN HOUSING PRICE]' derivation='Avg' name='[avg:MEDIAN HOUSING PRICE:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[HOUSING TYPE]' derivation='None' name='[none:HOUSING TYPE:nk]' pivot='key' type='nominal' />
+          </datasource-dependencies>
+          <manual-sort column='[federated.0fnvuoe0mxd7hd1cdqlir002bk7y].[none:HOUSING TYPE:nk]' direction='ASC'>
+            <dictionary>
+              <bucket>&quot;Detached Homes&quot;</bucket>
+              <bucket>&quot;All Housing Types&quot;</bucket>
+              <bucket>&quot;Row Homes&quot;</bucket>
+              <bucket>&quot;Condos&quot;</bucket>
+            </dictionary>
+          </manual-sort>
+          <aggregation value='true' />
+        </view>
+        <style />
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Automatic' />
+            <style>
+              <style-rule element='mark'>
+                <format attr='mark-labels-show' value='true' />
+                <format attr='mark-labels-cull' value='true' />
+                <format attr='mark-labels-mode' value='all' />
+              </style-rule>
+            </style>
+          </pane>
+        </panes>
+        <rows>[federated.0fnvuoe0mxd7hd1cdqlir002bk7y].[avg:MEDIAN HOUSING PRICE:qk]</rows>
+        <cols>[federated.0fnvuoe0mxd7hd1cdqlir002bk7y].[none:HOUSING TYPE:nk]</cols>
+      </table>
+      <simple-id uuid='{B828F0CD-CC2C-49A8-B237-35FD394EE9A3}' />
+    </worksheet>
+    <worksheet name='Sheet 2'>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='bc-data-catalogue-cma-2025-q4' name='federated.0fnvuoe0mxd7hd1cdqlir002bk7y' />
+          </datasources>
+          <datasource-dependencies datasource='federated.0fnvuoe0mxd7hd1cdqlir002bk7y'>
+            <column caption='Housing Type' datatype='string' name='[HOUSING TYPE]' role='dimension' type='nominal' />
+            <column caption='Median Housing Price' datatype='real' name='[MEDIAN HOUSING PRICE]' role='measure' type='quantitative' />
+            <column caption='Year' datatype='integer' name='[YEAR]' role='dimension' type='quantitative' />
+            <column-instance column='[MEDIAN HOUSING PRICE]' derivation='Avg' name='[avg:MEDIAN HOUSING PRICE:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[HOUSING TYPE]' derivation='None' name='[none:HOUSING TYPE:nk]' pivot='key' type='nominal' />
+            <column-instance column='[YEAR]' derivation='None' name='[none:YEAR:qk]' pivot='key' type='quantitative' />
+          </datasource-dependencies>
+          <filter class='categorical' column='[federated.0fnvuoe0mxd7hd1cdqlir002bk7y].[none:HOUSING TYPE:nk]'>
+            <groupfilter function='union' user:ui-domain='database' user:ui-enumeration='inclusive' user:ui-marker='enumerate'>
+              <groupfilter function='member' level='[none:HOUSING TYPE:nk]' member='&quot;All Housing Types&quot;' />
+              <groupfilter function='member' level='[none:HOUSING TYPE:nk]' member='&quot;Condos&quot;' />
+              <groupfilter function='member' level='[none:HOUSING TYPE:nk]' member='&quot;Detached Homes&quot;' />
+              <groupfilter function='member' level='[none:HOUSING TYPE:nk]' member='&quot;Row Homes&quot;' />
+            </groupfilter>
+          </filter>
+          <slices>
+            <column>[federated.0fnvuoe0mxd7hd1cdqlir002bk7y].[none:HOUSING TYPE:nk]</column>
+          </slices>
+          <aggregation value='true' />
+        </view>
+        <style />
+        <panes>
+          <pane id='1' selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Automatic' />
+            <encodings>
+              <color column='[federated.0fnvuoe0mxd7hd1cdqlir002bk7y].[:Measure Names]' />
+            </encodings>
+          </pane>
+        </panes>
+        <rows>[federated.0fnvuoe0mxd7hd1cdqlir002bk7y].[avg:MEDIAN HOUSING PRICE:qk]</rows>
+        <cols>[federated.0fnvuoe0mxd7hd1cdqlir002bk7y].[none:YEAR:qk]</cols>
+      </table>
+      <simple-id uuid='{CE20B7E8-3E73-4BFA-823F-978266E57A81}' />
+    </worksheet>
+    <worksheet name='Sheet 3'>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='bc-data-catalogue-cma-2025-q4' name='federated.0fnvuoe0mxd7hd1cdqlir002bk7y' />
+          </datasources>
+          <datasource-dependencies datasource='federated.0fnvuoe0mxd7hd1cdqlir002bk7y'>
+            <column caption='Cma Id' datatype='integer' name='[CMA ID]' role='dimension' type='ordinal' />
+            <column caption='Cma Name' datatype='string' name='[CMA NAME]' role='dimension' type='nominal' />
+            <column caption='Historic Payment Percent Income' datatype='real' name='[HISTORIC PAYMENT PERCENT INCOME]' role='measure' type='quantitative' />
+            <column-instance column='[CMA ID]' derivation='None' name='[none:CMA ID:ok]' pivot='key' type='ordinal' />
+            <column-instance column='[CMA NAME]' derivation='None' name='[none:CMA NAME:nk]' pivot='key' type='nominal' />
+            <column-instance column='[HISTORIC PAYMENT PERCENT INCOME]' derivation='Sum' name='[sum:HISTORIC PAYMENT PERCENT INCOME:qk]' pivot='key' type='quantitative' />
+          </datasource-dependencies>
+          <aggregation value='true' />
+        </view>
+        <style />
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Automatic' />
+            <encodings>
+              <text column='[federated.0fnvuoe0mxd7hd1cdqlir002bk7y].[sum:HISTORIC PAYMENT PERCENT INCOME:qk]' />
+            </encodings>
+            <style>
+              <style-rule element='mark'>
+                <format attr='mark-labels-show' value='true' />
+              </style-rule>
+            </style>
+          </pane>
+        </panes>
+        <rows>([federated.0fnvuoe0mxd7hd1cdqlir002bk7y].[none:CMA ID:ok] / [federated.0fnvuoe0mxd7hd1cdqlir002bk7y].[none:CMA NAME:nk])</rows>
+        <cols />
+      </table>
+      <simple-id uuid='{338F6F0B-9F58-4B51-8CF6-F7F5C24AF1D5}' />
+    </worksheet>
+    <worksheet name='Sheet 4'>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='bc-data-catalogue-cma-2025-q4' name='federated.0fnvuoe0mxd7hd1cdqlir002bk7y' />
+          </datasources>
+          <datasource-dependencies datasource='federated.0fnvuoe0mxd7hd1cdqlir002bk7y'>
+            <column caption='Cma Id' datatype='integer' name='[CMA ID]' role='dimension' type='ordinal' />
+            <column caption='Cma Name' datatype='string' name='[CMA NAME]' role='dimension' type='nominal' />
+            <column caption='Historic Payment Percent Income' datatype='real' name='[HISTORIC PAYMENT PERCENT INCOME]' role='measure' type='quantitative' />
+            <column-instance column='[HISTORIC PAYMENT PERCENT INCOME]' derivation='Avg' name='[avg:HISTORIC PAYMENT PERCENT INCOME:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[CMA ID]' derivation='None' name='[none:CMA ID:ok]' pivot='key' type='ordinal' />
+            <column-instance column='[CMA NAME]' derivation='None' name='[none:CMA NAME:nk]' pivot='key' type='nominal' />
+          </datasource-dependencies>
+          <computed-sort column='[federated.0fnvuoe0mxd7hd1cdqlir002bk7y].[none:CMA NAME:nk]' direction='DESC' using='[federated.0fnvuoe0mxd7hd1cdqlir002bk7y].[avg:HISTORIC PAYMENT PERCENT INCOME:qk]' />
+          <aggregation value='true' />
+        </view>
+        <style />
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Automatic' />
+            <encodings>
+              <lod column='[federated.0fnvuoe0mxd7hd1cdqlir002bk7y].[none:CMA ID:ok]' />
+            </encodings>
+          </pane>
+        </panes>
+        <rows>[federated.0fnvuoe0mxd7hd1cdqlir002bk7y].[avg:HISTORIC PAYMENT PERCENT INCOME:qk]</rows>
+        <cols>[federated.0fnvuoe0mxd7hd1cdqlir002bk7y].[none:CMA NAME:nk]</cols>
+      </table>
+      <simple-id uuid='{650063AB-C588-450C-8C12-F7540B4DFCDC}' />
+    </worksheet>
+  </worksheets>
+  <dashboards>
+    <dashboard enable-sort-zone-taborder='true' name='Dashboard 1 (2)'>
+      <style />
+      <size maxheight='860' maxwidth='650' minheight='560' minwidth='420' />
+      <zones>
+        <zone h='100000' id='4' type-v2='layout-basic' w='100000' x='0' y='0'>
+          <zone h='97814' id='13' param='vert' type-v2='layout-flow' w='97538' x='1231' y='1093'>
+            <zone h='5738' id='14' type-v2='title' w='97538' x='1231' y='1093'>
+              <zone-style>
+                <format attr='border-color' value='#000000' />
+                <format attr='border-style' value='none' />
+                <format attr='border-width' value='0' />
+                <format attr='margin' value='4' />
+              </zone-style>
+            </zone>
+            <zone h='92076' id='7' param='horz' type-v2='layout-flow' w='97538' x='1231' y='6831'>
+              <zone h='92076' id='5' type-v2='layout-basic' w='72923' x='1231' y='6831'>
+                <zone h='92076' id='3' name='Sheet 1' w='36462' x='1231' y='6831'>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                  </zone-style>
+                </zone>
+                <zone h='92076' id='11' name='Sheet 3' w='36461' x='37693' y='6831'>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                  </zone-style>
+                </zone>
+              </zone>
+              <zone fixed-size='160' h='92076' id='6' is-fixed='true' param='vert' type-v2='layout-flow' w='24615' x='74154' y='6831'>
+                <zone h='7104' id='8' name='Sheet 1' param='[federated.0fnvuoe0mxd7hd1cdqlir002bk7y].[none:HOUSING TYPE:nk]' type-v2='highlighter' w='24615' x='74154' y='6831'>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                  </zone-style>
+                </zone>
+                <zone h='78688' id='9' name='Sheet 2' w='24615' x='74154' y='13935'>
+                  <layout-cache minheight='198' minwidth='166' type-h='scalable' type-w='scalable' />
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                  </zone-style>
+                </zone>
+                <zone h='6284' id='10' name='Sheet 2' pane-specification-id='1' param='[federated.0fnvuoe0mxd7hd1cdqlir002bk7y].[:Measure Names]' type-v2='color' w='24615' x='74154' y='92623'>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                  </zone-style>
+                </zone>
+              </zone>
+            </zone>
+          </zone>
+          <zone-style>
+            <format attr='border-color' value='#000000' />
+            <format attr='border-style' value='none' />
+            <format attr='border-width' value='0' />
+            <format attr='margin' value='8' />
+          </zone-style>
+        </zone>
+      </zones>
+      <devicelayouts>
+        <devicelayout auto-generated='true' name='Phone'>
+          <size maxheight='1100' minheight='1100' sizing-mode='vscroll' />
+          <zones>
+            <zone h='100000' id='16' type-v2='layout-basic' w='100000' x='0' y='0'>
+              <zone h='97814' id='15' param='vert' type-v2='layout-flow' w='97538' x='1231' y='1093'>
+                <zone h='5738' id='14' type-v2='title' w='97538' x='1231' y='1093'>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+                <zone h='7104' id='8' name='Sheet 1' param='[federated.0fnvuoe0mxd7hd1cdqlir002bk7y].[none:HOUSING TYPE:nk]' type-v2='highlighter' w='24615' x='74154' y='6831'>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+                <zone fixed-size='280' h='92076' id='3' is-fixed='true' name='Sheet 1' w='36462' x='1231' y='6831'>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+                <zone fixed-size='280' h='92076' id='11' is-fixed='true' name='Sheet 3' w='36461' x='37693' y='6831'>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+                <zone fixed-size='280' h='78688' id='9' is-fixed='true' name='Sheet 2' w='24615' x='74154' y='13935'>
+                  <layout-cache minheight='198' minwidth='166' type-h='scalable' type-w='scalable' />
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+                <zone h='6284' id='10' name='Sheet 2' pane-specification-id='1' param='[federated.0fnvuoe0mxd7hd1cdqlir002bk7y].[:Measure Names]' type-v2='color' w='24615' x='74154' y='92623'>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+              </zone>
+              <zone-style>
+                <format attr='border-color' value='#000000' />
+                <format attr='border-style' value='none' />
+                <format attr='border-width' value='0' />
+                <format attr='margin' value='8' />
+              </zone-style>
+            </zone>
+          </zones>
+        </devicelayout>
+      </devicelayouts>
+      <simple-id uuid='{711ADB71-C983-4E8A-87EB-482C1FE71CFC}' />
+    </dashboard>
+  </dashboards>
+  <windows source-height='30'>
+    <window class='worksheet' maximized='true' name='Sheet 1'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='title' />
+          </strip>
+        </edge>
+        <edge name='bottom'>
+          <strip size='94'>
+            <card type='caption' />
+          </strip>
+        </edge>
+        <edge name='right'>
+          <strip size='160'>
+            <card param='[federated.0fnvuoe0mxd7hd1cdqlir002bk7y].[none:HOUSING TYPE:nk]' type='highlighter' />
+          </strip>
+        </edge>
+      </cards>
+      <simple-id uuid='{E9C94647-D8D1-4DE1-8883-1CA22B3D0EBA}' />
+    </window>
+    <window class='worksheet' name='Sheet 2'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='31'>
+            <card type='title' />
+          </strip>
+        </edge>
+        <edge name='right'>
+          <strip size='160'>
+            <card pane-specification-id='1' param='[federated.0fnvuoe0mxd7hd1cdqlir002bk7y].[:Measure Names]' type='color' />
+          </strip>
+        </edge>
+      </cards>
+      <simple-id uuid='{510B1C8B-0021-48FC-A1EC-EFD95EEEC356}' />
+    </window>
+    <window class='worksheet' name='Sheet 3'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='31'>
+            <card type='title' />
+          </strip>
+        </edge>
+      </cards>
+      <simple-id uuid='{EDCAB047-5BCA-44C4-9AC7-40B5427342D5}' />
+    </window>
+    <window class='dashboard' name='Dashboard 1 (2)'>
+      <viewpoints>
+        <viewpoint name='Sheet 1'>
+          <zoom type='entire-view' />
+        </viewpoint>
+        <viewpoint name='Sheet 2'>
+          <zoom type='entire-view' />
+        </viewpoint>
+        <viewpoint name='Sheet 3'>
+          <zoom type='entire-view' />
+        </viewpoint>
+      </viewpoints>
+      <active id='-1' />
+      <simple-id uuid='{EF182961-59BD-4ECC-8CA6-1CBFD78ADC70}' />
+    </window>
+    <window class='worksheet' name='Sheet 4'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='31'>
+            <card type='title' />
+          </strip>
+        </edge>
+      </cards>
+      <simple-id uuid='{82C8F69F-ACA1-478C-94F9-5A7B1E086C44}' />
+    </window>
+  </windows>
+</workbook>

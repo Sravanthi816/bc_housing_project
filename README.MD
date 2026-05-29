@@ -2,167 +2,319 @@
 
 ## Project Overview
 
-This project analyzes housing affordability trends across Vancouver and multiple British Columbia CMA (Census Metropolitan Area) regions using PostgreSQL and advanced analytical SQL.
+This project analyzes housing affordability trends across British Columbia Census Metropolitan Areas (CMAs) using PostgreSQL, SQL, Python, Pandas, and Tableau.
 
-The project is designed to simulate real-world business analytics workflows while strengthening advanced SQL and analytical reasoning skills.
+The goal of this project is to simulate a real-world data analytics workflow, starting from raw datasets and progressing through data modeling, exploratory data analysis (EDA), business analytics, statistical analysis, data visualization, and dashboard development.
 
-The analysis focuses on:
-- housing affordability trends
-- mortgage burden analysis
-- regional comparisons
-- affordability deterioration
-- business KPI analytics
-- trend and volatility analysis
-- segmentation and ranking analytics
-- time-series analytical reporting
+This project combines:
 
-This project is part of a long-term learning journey toward:
-- advanced SQL engineering
-- analytics engineering
-- business intelligence
-- data analytics
-- data-driven decision making
+- Advanced SQL analytics
+- Data cleaning and transformation
+- Python and Pandas analysis
+- Statistical exploration
+- Data visualization
+- Tableau dashboard development
+- Business intelligence reporting
 
 ---
 
-# Project Objectives
+# Business Problem
 
-- Analyze long-term housing affordability trends
-- Practice real-world analytical SQL
-- Learn advanced window functions
-- Build business KPI reporting queries
-- Develop analytical thinking and business reasoning
-- Practice trend and time-series analysis
-- Learn correlated subqueries and advanced SQL
-- Build portfolio-quality analytics projects
-- Simulate executive-level analytical reporting
+Housing affordability has become one of the most important economic issues in British Columbia.
+
+This project explores:
+
+- How housing prices have changed over time
+- Which housing types are most expensive
+- Which regions have the highest mortgage burden
+- The relationship between housing prices and economic indicators
+- Long-term affordability trends
+- Regional housing market differences
 
 ---
 
 # Dataset Source
 
-Dataset:
-BC Housing Affordability Dataset
+## BC Housing Affordability Dataset
 
 Source:
+
 https://catalogue.data.gov.bc.ca/dataset/b-c-housing-affordability
 
-Example dataset:
-bc-data-catalogue-cma-2025-q4.csv
+Files Used:
 
-The dataset contains information related to:
-- median housing prices
-- household income
-- mortgage burden
-- housing affordability
-- housing types
-- CMA regional data
-- economic indicators
+- bc-data-catalogue-cma-2025-q4.csv
+- regions.csv
+- yearly_interest_rates.csv
 
 ---
 
-# Tech Stack
+# Technology Stack
 
-## Current Stack
+## Database
 
 - PostgreSQL
-- SQL
-- VS Code
-- Git
-- GitHub
-- CSV data processing
 
-## Planned Additions
+## Programming
 
 - Python
 - Pandas
+
+## Visualization
+
 - Matplotlib
 - Seaborn
-- Power BI / Tableau
-- Forecasting models
-- Geospatial visualization
+- Tableau Public
+
+## Development Tools
+
+- VS Code
+- Git
+- GitHub
 
 ---
 
-# Database Tables
+# Database Design
 
-## 1. housing_affordability
+## housing_affordability
 
-Main analytical dataset containing:
-- CMA regions
-- housing types
-- housing prices
-- mortgage burden metrics
-- yearly affordability metrics
+Primary analytical table containing:
 
-## 2. regions
+- CMA information
+- Housing types
+- Housing prices
+- Household income
+- Mortgage burden metrics
+- Resale statistics
+
+## regions
 
 Regional demographic information:
-- population
-- unemployment rate
-- regional metadata
 
-## 3. yearly_interest_rates
+- Population
+- Province
+- Unemployment rate
 
-Economic indicator dataset:
-- interest rates
-- inflation rates
-- yearly economic trends
+## yearly_interest_rates
+
+Economic indicators:
+
+- Prime interest rate
+- Average interest rate
+- Inflation rate
 
 ---
 
 # SQL Concepts Implemented
 
 ## Core SQL
+
 - SELECT
 - WHERE
 - ORDER BY
 - GROUP BY
 - HAVING
 
-## JOINS
+## Joins
+
 - INNER JOIN
 - LEFT JOIN
-- one-to-many relationships
-- analytical joins
+- Multi-table analytical joins
 
 ## Window Functions
+
+- ROW_NUMBER()
 - RANK()
 - DENSE_RANK()
-- ROW_NUMBER()
 - LAG()
 - LEAD()
 - FIRST_VALUE()
 - LAST_VALUE()
 
-## Business Analytics
-- affordability scoring
-- KPI reporting
-- trend analysis
-- business segmentation
-- volatility analytics
-- executive reporting queries
-
 ## Subqueries
-- scalar subqueries
-- correlated subqueries
-- EXISTS / NOT EXISTS
+
+- Scalar Subqueries
+- Correlated Subqueries
+- EXISTS
+- NOT EXISTS
 - IN
-- ANY / ALL
-- nested analytical filtering
+- ANY
+- ALL
+
+## Business Analytics
+
+- Regional Ranking
+- Housing Affordability Analysis
+- Trend Analysis
+- Mortgage Burden Analysis
+- Volatility Analysis
+- Executive KPI Reporting
 
 ---
 
-# Example Business Questions Solved
+# Python & Pandas Analysis
 
-- Which regions have the highest mortgage burden?
-- Which housing types are least affordable?
-- Which regions show worsening affordability trends?
-- Which regions are above the provincial average?
-- Which regions have the most volatile housing trends?
-- Which regions consistently deteriorate over time?
-- Which housing categories show the highest financial risk?
-- Top-N housing market analysis within regions
+The project was extended using Python and Pandas for exploratory data analysis.
+
+## Data Processing
+
+- CSV loading
+- Data merging
+- Data cleaning
+- Data transformation
+
+## Pandas Concepts Used
+
+- DataFrames
+- Filtering
+- Sorting
+- GroupBy
+- Aggregations
+- Pivot Tables
+- Correlation Analysis
+
+## Statistical Analysis
+
+Correlation matrix was used to study relationships between:
+
+- Median housing price
+- Interest rates
+- Inflation rate
+- Population
+- Unemployment rate
+- Mortgage payment percent income
+
+---
+
+# Visualizations Created
+
+## Matplotlib
+
+### Housing Price Trends
+
+- Long-term housing price growth
+- Housing type comparisons
+
+### Bar Charts
+
+- Housing type analysis
+- Regional comparisons
+
+### Line Charts
+
+- Housing price trends by year
+
+### Boxplots
+
+- Housing price distribution
+- Outlier detection
+
+---
+
+## Seaborn
+
+### Correlation Heatmap
+
+Used to visualize relationships between:
+
+- Housing prices
+- Inflation
+- Interest rates
+- Population
+- Unemployment
+- Mortgage burden
+
+---
+
+# Tableau Dashboard
+
+A business intelligence dashboard was developed using Tableau Public.
+
+Dashboard components include:
+
+## Housing Type Analysis
+
+Average housing price by housing type.
+
+## Housing Price Trend
+
+Historical housing price growth from 2000–2025.
+
+## Mortgage Burden by CMA
+
+Comparison of affordability pressure across regions.
+
+## Regional Summary Table
+
+Interactive CMA-level metrics.
+
+---
+
+# Key Findings
+
+## Housing Types
+
+- Detached homes consistently have the highest housing prices.
+- Condos remain the least expensive housing category.
+- Row homes generally fall between condos and detached homes.
+
+## Housing Trends
+
+- Housing prices increased significantly between 2000 and 2025.
+- Major growth occurred after 2015.
+- Temporary slowdowns can be observed around:
+  - 2008–2009
+  - 2022–2023
+
+## Mortgage Burden
+
+- Several BC regions show a mortgage burden exceeding 40% of household income.
+- This indicates increasing affordability challenges across many markets.
+
+## Correlation Findings
+
+### Strong Positive Correlation
+
+- Median Housing Price ↔ Mortgage Payment Percent Income
+- Correlation ≈ 0.88
+
+### Moderate Positive Correlation
+
+- Median Housing Price ↔ Inflation Rate
+- Correlation ≈ 0.35
+
+### Weak Positive Correlation
+
+- Median Housing Price ↔ Population
+- Correlation ≈ 0.26
+
+### Weak Negative Correlation
+
+- Median Housing Price ↔ Average Interest Rate
+- Correlation ≈ -0.17
+
+- Median Housing Price ↔ Unemployment Rate
+- Correlation ≈ -0.14
+
+---
+
+# Tableau Screenshots
+
+## Housing Type Analysis
+
+![Housing Type Analysis](tableau/screenshots/housing_type_analysis.png)
+
+## Housing Trend
+
+![Housing Trend](tableau/screenshots/housing_trend.png)
+
+## Mortgage Burden by CMA
+
+![Mortgage Burden](tableau/screenshots/mortgage_burden_by_cma.png)
+
+## Dashboard
+
+![Dashboard](tableau/screenshots/dashboard.png)
 
 ---
 
@@ -172,35 +324,71 @@ Economic indicator dataset:
 vancouver_housing_project/
 
 ├── data/
-│   └── raw CSV datasets
-│
-├── docs/
-│   ├── dataset_description.md
-│   ├── analytical_findings.md
-│   ├── sql_learning_notes.md
-│   ├── subqueries_notes.md
-│   └── future_scope.md
+│   ├── bc-data-catalogue-cma-2025-q4.csv
+│   ├── regions.csv
+│   └── yearly_interest_rates.csv
 │
 ├── notebooks/
-│   └── future Python analytics notebooks
+│   └── 01_pandas_basics.ipynb
 │
 ├── sql/
-│   ├── eda/
-│   │   ├── 01_dataset_overview.sql
-│   │   ├── 02_window_functions.sql
-│   │   ├── 03_business_analysis.sql
-│   │   ├── 04_joins.sql
-│   │   ├── 05_business_analytics.sql
-│   │   └── 06_subqueries_practice.sql
-│   │
-│   └── schema/
-│       ├── create_housing_table.sql
-│       ├── regions_table.sql
-│       ├── regions_insert.sql
-│       ├── yearly_interest_rates.sql
-│       └── yearly_interest_rates_insert.sql
+│   ├── schema/
+│   └── eda/
+│
+├── tableau/
+│   ├── vancouver_housing_dashboard.twbx
+│   └── screenshots/
+│       ├── dashboard.png
+│       ├── housing_trend.png
+│       ├── housing_type_analysis.png
+│       └── mortgage_burden_by_cma.png
+│
+├── docs/
 │
 ├── screenshots/
-│   └── sample_query_outputs.png
 │
 └── README.md
+```
+
+---
+
+# Skills Demonstrated
+
+- SQL Development
+- Data Modeling
+- Business Analytics
+- Exploratory Data Analysis (EDA)
+- Statistical Analysis
+- Data Visualization
+- Dashboard Development
+- Tableau Public
+- Pandas
+- PostgreSQL
+- Git Version Control
+- Analytical Thinking
+
+---
+
+# Future Enhancements
+
+Planned next steps:
+
+- Advanced Pandas
+- Time-Series Analysis
+- Rolling Window Analytics
+- Forecasting Models
+- Predictive Analytics
+- Tableau KPI Dashboards
+- Power BI
+- Geospatial Housing Analysis
+- Machine Learning Models
+
+---
+
+# Author
+
+**Sravanthi Gandi**
+
+System Engineer | Data Analytics Enthusiast 
+
+This project was developed as part of a structured learning journey covering SQL, Python, Pandas, Tableau, Business Analytics, and Data Visualization.
